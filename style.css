@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Prompt:300,400,500,600&subset=thai,latin');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Prompt', sans-serif !important;
+  font-weight: 500 !important;
+}
+/* simple */
+div.pop{
+  margin-top: 50px;
+}
+
+ul{
+  width: 100%;
+  min-height: 50px;
+}
+
+ul li{
+  width: 100%;
+  height: 5rem;
+  background-color: #fff;
+  border-radius: 5px;
+  list-style: none;
+  display: none;
+  transition: all .2s ease-in-out;
+  margin-bottom: 10px;
+  line-height: 50px;
+}
+
+ul li:hover{
+  width: 100%;
+  height: 5rem;
+  padding-left: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 8px 1px #999;
+}
+
+ul li a:link{
+  text-decoration: none;
+}
+
+a{
+  color: #000 !important;
+  font-size: 20px;
+}
+
+.blocker{
+  display: block;
+}
+
+.display{
+  display: block;
+  padding-left: 10px;
+}
+
+.addsize{
+  padding-left: 30px;
+}
+/* end simple */
+
+/* answer*/
+#msform {
+  width: 100%;
+  margin: 50px auto;
+  text-align: center;
+  position: relative;
+}
+#msform fieldset {
+  background: white;
+  border: 0 none;
+  border-radius: 3px;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  padding: 20px 30px;
+
+  box-sizing: border-box;
+  width: 100%;
+
+/*stacking fieldsets above each other*/
+  position: absolute;
+}
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+  display: none;
+}
+/*inputs*/
+#msform input, #msform textarea {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: montserrat;
+  color: #2C3E50;
+  font-size: 13px;
+}
+
+#msform input[type=radio]{
+  padding: 15px;
+  border: 1px solid #ccc;
+  margin-left: -55%;
+  color: #2C3E50;
+}
+/*buttons*/
+#msform .action-button {
+  width: 100px;
+  background: #27AE60;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
+}
+#msform .action-button:hover, #msform .action-button:focus {
+  box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+}
+/*headings*/
+.fs-title {
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #2C3E50;
+  margin-bottom: 10px;
+}
+.fs-subtitle {
+  font-weight: normal;
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.red{
+  color: red;
+}
+.success{
+  color:green;
+}
+#message{
+  padding-top: 200px;
+  position: relative;
+  text-align: center;
+}
+/* end answer */
+
+/* index */
+h2.mos{
+  margin: 0 auto;
+  margin-top: 50%;
+  text-align: center;
+  font-size: 30px;
+  width: 50%;
+  min-height: 10px;
+}
+
+h2.e{
+  font-size: 30px;
+}
+
+label{
+  font-size: 20px !important;
+}
+
+h4.swim{
+  text-align: center;
+  position :relative;
+  -webkit-animation: mymove 3s; /* Safari 4.0 - 8.0 */
+  animation: mymove 3s;
+}
+
+.delay{
+  animation-delay: 3s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  0%   {top: 0px;}
+  75% {top: 50px;}
+  100% {top: 0px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    0%   {top: 0px;}
+    75% {top: 50px;}
+    100% {top: 0px;}
+}
+/* end index */
+
+
+@media screen and (min-width: 700px) {
+  .fs-title {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #2C3E50;
+    margin-bottom: 10px;
+  }
+
+  a{
+    color: #000 !important;
+    font-size: 16px;
+  }
+
+  #msform input[type=radio]{
+    margin-left: -54%;
+  }
+
+  label{
+    font-size: 16px !important;
+  }
+
+  h2.e{
+    font-size: 30px;
+  }
+
+  h2.mos{
+    margin-top: 20%;
+    font-size: 30px;
+  }
+}

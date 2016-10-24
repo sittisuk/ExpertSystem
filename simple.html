@@ -1,0 +1,115 @@
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="gt_favicon.png">
+    <link rel="stylesheet" href="style.css"/>
+    <!-- jQuery -->
+    <script src="jquery-1.9.1.min.js" type="text/javascript"></script>
+    <!-- jQuery easing plugin -->
+    <script src="jquery.easing.min.js"></script>
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <style>
+
+  </style>
+  <body>
+    <div class="container">
+      <br><br>
+      <center><h2 class="e">Expert System Ant</h2></center>
+      <h5>FORWARD CHAINING : <span>Expert System Ant</span></h5>
+      <hr>
+      <div class="row pop">
+        <div class="col-md-6">
+          <ul>
+            <li id="ber" style="display: block"><a href="#">- มดแบ่งออกเป็น 7 สายพันธุ์</a></li>
+            <li id="ber2"><a href="#">- มดคันไฟ</a></li>
+            <li id="ber3"><a href="#">- มดแดง</a></li>
+            <li id="ber4"><a href="#">- มดละเอียด</a></li>
+            <li id="ber5"><a href="#">- มดดำ</a></li>
+            <li id="ber6"><a href="#">- มดเหม็น</a></li>
+            <li id="ber7"><a href="#">- มดง่าม</a></li>
+            <li id="ber8"><a href="#">- มดตะนอย</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <form id="msform">
+          	<!-- fieldsets -->
+          		<fieldset style="display: block">
+          		<h1 class="fs-title">The ants What color?</h1>
+          		<h2 class="fs-subtitle"><b>:: มดสีอะไร</b></h3>
+          		<div class="fs-error"></div>
+              <div class="row" style="text-align:left;">
+                <div class="col-md-12">
+                  <div class="radio">
+                    <label><input type="radio" name="color" value="หัวสีดำ"/>สีดำ</label>
+                  </div>
+                  <div class="radio">
+                    <label><input type="radio" name="color" value="สีแดง"/>สีแดง</label>
+                  </div>
+                </div>
+              </div>
+          		<input type="button" name="next" class="next action-button" value="Next" />
+          	</fieldset>
+          	<fieldset>
+          		<h2 class="fs-title">Body style and unloading of ants</h2>
+          		<h3 class="fs-subtitle">:: ลักษณะลำตัวและขนของมด</h3>
+              <div class="fs-error"></div>
+              <div class="row" style="text-align:left;">
+                <div class="col-md-12">
+                  <div class="radio">
+                    <label><input type="radio" name="unloading" value="มีขนปกคลุมตัว"/>มีขนปกคลุมตัว</label>
+                  </div>
+                  <div class="radio">
+                    <label><input type="radio" name="unloading" value="มีขนน้อย"/>มีขนน้อย</label>
+                  </div>
+                </div>
+              </div>
+          		<input type="button" name="previous" class="previous action-button" value="Previous" />
+          		<input type="button" name="next" class="next action-button" value="Next" />
+          	</fieldset>
+            <fieldset>
+          		<h2 class="fs-title">The characteristic Ant chest</h2>
+          		<h3 class="fs-subtitle">:: ลักษณะของอกมด</h3>
+              <div class="fs-error"></div>
+              <div class="row" style="text-align:left;">
+                <div class="col-md-12">
+                  <div class="radio">
+                    <label><input type="radio" name="chest" value="อกกว้าง"/>อกกว้าง</label>
+                  </div>
+                  <div class="radio">
+                    <label><input type="radio" name="chest" value="อกแคบ"/>อกแคบ</label>
+                  </div>
+                </div>
+              </div>
+          		<input type="button" name="previous" class="previous action-button" value="Previous" />
+          		<input type="button" name="next" class="next action-button" value="Next" />
+          	</fieldset>
+          	<fieldset>
+                <h2 class="fs-title">The ant species</h2>
+            		<h3 class="fs-subtitle">:: คือมดสายพันธุ์</h3>
+            		<div class="fs-error"></div>
+                <div class="row" style="text-align:left;">
+                  <div class="col-md-12">
+                    <p id="first"></p>
+                    <p id="two"></p>
+                    <p id="three"></p>
+                    <p id="four"></p>
+                    <hr>
+                    <h4>ผลลัพธ์ : <span id="Answer"></span></h4>
+                    <textarea id="Ans" readonly></textarea>
+                  </div>
+                </div>
+                <!-- <input type="button" name="previous" class="previous action-button" value="Previous" /> -->
+            		<input type="submit" name="submit" class="submit action-button" value="ย้อนกลับ" />
+          	</fieldset>
+          </form>
+        </div>
+    </div>
+    <div class="a"></div>
+  </div>
+  </body>
+</html>
